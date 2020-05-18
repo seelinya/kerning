@@ -3,63 +3,97 @@ summary:focus {
 }
 
 html {
-  font-family: 'Helvetica', sans-serif;
-  font-weight: lighter;
-  hyphens: auto;
+  font-family: 'Playfair Display', serif;
+  color: black;
+  margin: auto;
 }
 
 body {
+  display: grid;
+  /*grid-template-areas:
+    "header header-text-a header header header header header header header header header-text-b header"
+    "header header header header header header header header header header header header"
+    "header header header header header header header header header header header header";
+  grid-template-columns: repeat (12, 1fr);*/
+  width: 100vw;
+}
+
+
+header {
+  background: linear-gradient(to bottom right, #F9D39D, #FF7ECC, #64F5FF);
+  height: 60vh;
+  width: 100vw;
+}
+
+p {
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  color: black;
+  padding-left: 170px;
+  font-weight: lighter;
+  width: 800px;
+  margin: auto;
+}
+
+h2 {
+  line-height: 120%;
+  font-size: 2rem;
+  color: black;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  margin: auto;
+  font-weight: lighter;
+}
+
+
+.name h2 {
+  text-align: right;
+  font-weight: lighter;
+  letter-spacing: 0.2rem;
+  padding-right: 50px;
+  color: white;
+  padding-top: 50px;
+  font-size: 0.8rem;
+}
+
+.name h1 {
   text-align: left;
-  margin-left: 200px;
-  margin-top: 100px;
-  background: linear-gradient(to bottom right, #E7FEFF, #FFE2FC);
-  height: 100vh;
+  letter-spacing: 0.2rem;
+  padding-left: 50px;
+  color: white;
+  font-weight: lighter;
+  font-size: 0.8rem;
 }
 
-h1 {
-  font-family: 'Playfair Display', serif;
+
+.header h1 {
+  padding-top: 1rem;
+  font-size: 10rem;
+  color: white;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  font-weight: lighter;
+  margin: auto;
+  z-index: 3;
+}
+
+.gruppe h1 {
+  padding-top: 2rem;
+  font-size: 2rem;
   color: black;
-  text-decoration: none;
-  font-size: 6rem;
-  font-weight: normal;
-  line-height: 95%;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-  font-size: 1.7rem;
-}
-
-a:hover {
+  margin-left: 50px;
+  font-weight: lighter;
   background-image: linear-gradient(120deg, #E588FF 0%, #54E9FF 100%);
   background-repeat: no-repeat;
-  background-size: 100% 0.3em;
+  background-size: 7.3rem 0.3em;
   background-position: 0 88%;
-  -webkit-animation-name: rotate;
-  -webkit-animation-duration: 2s;
   transition: background-size 0.25s ease-in;
   &:hover {
     background-size: 100% 88%;
-  }
 }
 
-@-webkit-keyframes rotate {
-  from {
-    -webkit-transform-origin: center;
-    transform-origin: center;
-    -webkit-transform: rotate3d(0, 0, 1, -200deg);
-    transform: rotate3d(0, 0, 1, -200deg);
-    opacity: 1;
-  }
-  to {
-    -webkit-transform-origin: center;
-    transform-origin: center;
-    -webkit-transform: none;
-    transform: none;
-    opacity: 1;
-  }
+article {
+  background: red;
+  height: 60vh;
+  width: 100vw;
 }
-
-
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
