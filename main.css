@@ -9,7 +9,6 @@ html {
 }
 
 body {
-  display: grid;
   /*grid-template-areas:
     "header header-text-a header header header header header header header header header-text-b header"
     "header header header header header header header header header header header header"
@@ -25,6 +24,38 @@ header {
   width: 100vw;
 }
 
+.header h1 {
+  padding-top: 1rem;
+  font-size: 10rem;
+  color: white;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  font-weight: lighter;
+  margin: auto;
+  z-index: 3;
+}
+
+article {
+  display: flex;
+  background-image: linear-gradient(to bottom right, rgba(249,211,157,0.3), rgba(255,126,204,0.3), rgba(100,245,255,0.3));
+  height: 50vh;
+  width: 100vw;
+  margin: auto;
+  color: black;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  transition: all 5s ease;
+}
+
+
+article:hover {
+    background-image: linear-gradient(to bottom right, rgba(249,211,157,1), rgba(255,126,204,1), rgba(100,245,255,1));
+}
+
+
+
 p {
   font-size: 1rem;
   letter-spacing: 0.05rem;
@@ -37,14 +68,39 @@ p {
 
 h2 {
   line-height: 120%;
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: black;
   letter-spacing: 0.2rem;
-  text-align: center;
-  margin: auto;
   font-weight: lighter;
+  text-align: center;
 }
 
+h3 {
+  line-height: 120%;
+  font-size: 1.7rem;
+  color: black;
+  letter-spacing: -0.2rem;
+  font-weight: lighter;
+  text-align: left;
+}
+
+h4 {
+  line-height:80%;
+  font-size: 1.7rem;
+  color: black;
+  letter-spacing: 2rem;
+  font-weight: lighter;
+  text-align: left;
+}
+
+h5 {
+  line-height: 120%;
+  font-size: 1.7rem;
+  color: black;
+  letter-spacing: 0.2rem;
+  font-weight: lighter;
+  text-align: right;
+}
 
 .name h2 {
   text-align: right;
@@ -66,22 +122,11 @@ h2 {
 }
 
 
-.header h1 {
-  padding-top: 1rem;
-  font-size: 10rem;
-  color: white;
-  letter-spacing: 0.2rem;
-  text-align: center;
-  font-weight: lighter;
-  margin: auto;
-  z-index: 3;
-}
-
 .gruppe h1 {
   padding-top: 2rem;
   font-size: 2rem;
   color: black;
-  margin-left: 50px;
+  margin-left: 70px;
   font-weight: lighter;
   background-image: linear-gradient(120deg, #E588FF 0%, #54E9FF 100%);
   background-repeat: no-repeat;
@@ -92,8 +137,35 @@ h2 {
     background-size: 100% 88%;
 }
 
-article {
-  background: red;
-  height: 60vh;
+
+section {
   width: 100vw;
+}
+
+.schriftfamilie img {
+  width: 31.333%;
+  margin-left: 100px;
+  display: grid;
+}
+
+@media only screen and (max-width: 600px) {
+
+  header {
+    background: black;
+    height: 60vh;
+    width: 100vw;
+  }
+
+  .header h1 {
+    padding-top: 1rem;
+    font-size: 20rem;
+    color: black;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    font-weight: lighter;
+    margin: auto;
+    z-index: 3;
+  }
+
+
 }
