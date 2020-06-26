@@ -101,17 +101,15 @@ h6 {
 
 @keyframes header {
   0% {
-    letter-spacing: 2rem;
+    letter-spacing: 0.2em;
   }
 
   25% {
-    letter-spacing: 5rem;
+    letter-spacing: 0.5em;
   }
 
-
-
   90%{
-    letter-spacing: -1rem;
+    letter-spacing: -0.1em;
   }
 }
 
