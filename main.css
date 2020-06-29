@@ -42,7 +42,9 @@ h5 {
   color: black;
   letter-spacing: 0.2rem;
   font-weight: lighter;
-  text-align: right;
+  text-align: center;
+  margin-right: 5vw;
+  margin-left: 5vw;
 }
 
 h6 {
@@ -65,7 +67,7 @@ h6 {
   padding-left: 50px;
   color: white;
   font-weight: lighter;
-  font-size: 0.8rem;
+  font-size: 1.3em;
 }
 
 .name a {
@@ -80,7 +82,7 @@ h6 {
 
 .header h1 {
   padding-top: 1rem;
-  font-size: 10rem;
+  font-size: 10em;
   color: white;
   letter-spacing: 0.2rem;
   text-align: center;
@@ -117,10 +119,11 @@ h6 {
 
 .header h2 {
   text-align: center;
+  text
   letter-spacing: 0.2rem;
   color: black;
   padding-top: 30px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: lighter;
 }
 
@@ -240,35 +243,167 @@ a:hover {
   color: #64F5FF;
 }
 
-.h4 {
+.footer h4 {
   text-align: center;
   font-weight: lighter;
   margin: auto;
-  position: relative;
+  padding-bottom: 20px;
+  font-size: 0.7em;
+  color: #FCA9B4;
+  letter-spacing: 0.05rem;
 }
 
-}
+/*
+@media only screen and (max-width: 1200px) {
 
+  p {
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    color: black;
+    padding-left: 5vw;
+    font-weight: lighter;
+    width: 80vw;
+    margin: auto;
+  }
 
+  h6 {
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    color: black;
+    padding-left: 5vw;
+    font-weight: bolder;
+  }
 
-@media only screen and (max-width: 800px) {
+  .gruppe h1 {
+    padding-top: 2rem;
+    font-size: 2rem;
+    color: black;
+    margin-left: 5vw;
+    font-weight: lighter;
+  }
+
+} */
+
+@media only screen and (max-width: 1200px) {
 
   header {
-    background: black;
     height: 60vh;
     width: 100vw;
   }
 
   .header h1 {
     padding-top: 1rem;
-    font-size: 20rem;
-    color: black;
+    font-size: 5em;
     letter-spacing: 0.2rem;
     text-align: center;
     font-weight: lighter;
     margin: auto;
     z-index: 3;
+    padding-top: 10vh;
   }
 
+  @keyframes header {
+    0% {
+      letter-spacing: 0.2rem;
+    }
+
+    25% {
+      letter-spacing: 0.5rem;
+    }
+
+
+
+    90%{
+      letter-spacing: -1rem;
+    }
+  }
+
+  p {
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    color: black;
+    padding-left: 5vw;
+    font-weight: lighter;
+    width: 80vw;
+    margin: auto;
+  }
+
+  .schriftfamilie img {
+    width: 80vw;
+    display: grid;
+    padding-left: 5vw;
+    margin: auto;
+  }
+
+  .gruppe h1 {
+    padding-top: 2rem;
+    font-size: 2rem;
+    color: black;
+    margin-left: 5vw;
+    font-weight: lighter;
+  }
+
+  h6 {
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    color: black;
+    padding-left: 5vw;
+    font-weight: bolder;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    width: 80vw;
+  }
+
+  article {
+    display: flex;
+    background-image: linear-gradient(to bottom right, rgba(249,211,157,0.3), rgba(255,126,204,0.3), rgba(100,245,255,0.3));
+    height: 50vh;
+    width: 100vw;
+    color: black;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    transition: all 5s ease;
+  }
+
+  h5 {
+    line-height: 120%;
+    font-size: 1.2rem;
+    color: black;
+    letter-spacing: 0.2rem;
+    font-weight: lighter;
+    text-align: center;
+    margin-right: 5vw;
+    margin-left: 5vw;
+  }
+
+  .piss {
+    letter-spacing: 0.5rem;
+  }
+
+  .friends {
+    letter-spacing: -0.1rem;
+  }
+
+  .give {
+    letter-spacing: 0.2rem;
+  }
+
+  .migraine {
+    letter-spacing: 1rem;
+  }
+
+  ol {
+    width: 800px;
+    display: grid;
+    padding-left: 6vw;
+    margin: auto;
+    list-style-type: circle;
+    color: black;
+    padding-bottom: 150px;
+    text-decoration: none;
+    width: 80vw;
+  }
 
 }
